@@ -1,0 +1,13 @@
+.config/cmus/*
+!.config/cmus/rc
+!.config/cmus/themes
+
+.config/joplin/*
+!.config/joplin/keymap.json
+!.config/joplin/settings.json
+
+.config/mutt/*
+!.config/mutt/themes
+
+.config/fish/*
+!.config/fish/config.fish

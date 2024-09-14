@@ -1,0 +1,52 @@
+#import = ["/home/euber/.config/alacritty/themes/gruvbox.toml"]
+import = ["/home/euber/.config/alacritty/themes/nord.toml"]
+#import = ["/home/euber/.config/alacritty/themes/dracula.toml"]
+
+[cursor]
+style = "Underline"
+
+[font]
+size = 12.0
+
+[font.bold]
+family = "iosevka"
+style = "Bold"
+
+[font.bold_italic]
+family = "iosevka"
+style = "Bold Italic"
+
+[font.italic]
+family = "iosevka"
+style = "Italic"
+
+[font.normal]
+family = "iosevka"
+style = "Regular"
+
+[font.offset]
+x = 0
+y = 0 
+
+[[mouse.bindings]]
+action = "Copy"
+mouse = "Left"
+
+[[mouse.bindings]]
+action = "PasteSelection"
+mouse = "Right"
+
+[shell]
+program = "/usr/bin/fish"
+
+[window]
+opacity = 0.9
+
+[window.dimensions]
+columns = 0
+lines = 0
+
+[window.padding]
+x = 12
+y = 12
+

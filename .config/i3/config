@@ -1,0 +1,267 @@
+set $mod Mod4
+set $TERM alacritty
+
+# workspace layouts:
+workspace_layout tabbed
+
+# font
+font pango:Droid Sans Regular 12
+
+# Picom
+exec_always --no-startup-id picom -b
+
+# Polybar
+exec_always --no-startup-id ~/.config/polybar/launch.sh --blocks
+
+# thin borders
+hide_edge_borders both
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# Language keyboards
+bindsym $mod+Ctrl+b exec setxkbmap -layout br
+bindsym $mod+Ctrl+u exec setxkbmap -layout us
+
+# start a terminal
+bindsym $mod+Return exec $TERM
+
+# reload the configuration file
+bindsym $mod+Shift+q reload
+
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+R restart
+bindsym $mod+r mode "resize"
+
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+X exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# kill focused window
+bindsym $mod+q kill
+
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod+b split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+Shift+s layout stacking
+bindsym $mod+Shift+w layout tabbed
+bindsym $mod+Shift+t layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# focus the child container
+#bindsym $mod+d focus child
+
+# switch to workspace
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+bindsym $mod+9 workspace number $ws9
+bindsym $mod+0 workspace number $ws10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace number $ws1
+bindsym $mod+Shift+2 move container to workspace number $ws2
+bindsym $mod+Shift+3 move container to workspace number $ws3
+bindsym $mod+Shift+4 move container to workspace number $ws4
+bindsym $mod+Shift+5 move container to workspace number $ws5
+bindsym $mod+Shift+6 move container to workspace number $ws6
+bindsym $mod+Shift+7 move container to workspace number $ws7
+bindsym $mod+Shift+8 move container to workspace number $ws8
+bindsym $mod+Shift+9 move container to workspace number $ws9
+bindsym $mod+Shift+0 move container to workspace number $ws10
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+# Multimedia Keys
+bindsym F1 exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym F2 exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym F3 exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym F4 exec playerctl previous
+bindsym F5 exec playerctl play-pause
+bindsym F6 exec playerctl next
+
+# +10 brightness 
+bindsym F12 exec xrandr --output $(xrandr | grep " connected" | cut -d ' ' -f1) --brightness $(echo "$(xrandr --verbose | grep -i brightness | awk '{print $2}') + 0.1" | bc)
+
+# -10% brightness
+bindsym F11 exec xrandr --output $(xrandr | grep " connected" | cut -d ' ' -f1) --brightness $(echo "$(xrandr --verbose | grep -i brightness | awk '{print $2}') - 0.1" | bc)
+
+# Turn on the keyboard backlight (this may not work for all keyboards)
+#bindsym F10 exec xset led named "Scroll Lock"
+
+# Turn off the keyboard backlight (this may not work for all keyboards)
+#bindsym F10 exec xset -led named "Scroll Lock"
+
+# rofi
+bindsym $mod+d exec rofi -modi drun -show drun -line-padding 4 \
+                -columns 2 -padding 50 -hide-scrollbar \
+                -show-icons -drun-icon-theme "Arc-X-D" -font "Droid Sans Regular 12"
+
+# dmenu
+#bindsym $mod+d exec "dmenu_run -nf '#F8F8F2' -nb '#282A36' -sb '#6272A4' -sf '#F8F8F2' -fn 'monospace-10' -p 'dmenu'"
+
+bindsym Print exec scrot ~/Pictures/Screenshots/Screenshot_%Y-%m-%d_%H-%M-%S.png
+bindsym Shift+Print exec scrot -s ~/Pictures/Screenshots/Screenshot_%Y-%m-%d_%H-%M-%S.png
+bindsym $mod+Print exec scrot -u ~/Pictures/Screenshots/Screenshot_%Y-%m-%d_%H-%M-%S.png
+
+bindsym $mod+Shift+n exec $TERM -e newsboat
+
+bindsym $mod+Ctrl+f exec thunar
+bindsym $mod+Ctrl+i exec $TERM -e bash $HOME/cheet/cheet
+bindsym $mod+Ctrl+j exec $TERM -e jrnl
+bindsym $mod+Ctrl+k exec $TERM -e khal interactive
+bindsym $mod+Ctrl+q exec $TERM -e qn
+
+bindsym $mod+e exec $TERM -e mutt
+bindsym $mod+i exec $TERM -e nvim ~/.config/i3/config
+bindsym $mod+m exec $TERM -e ncmpcpp
+bindsym $mod+n exec $TERM -e joplin
+bindsym $mod+p exec $TERM -e pulsemixer
+bindsym $mod+t exec $TERM -e taskwarrior-tui
+bindsym $mod+y exec $TERM -e pipe-viewer
+bindsym $mod+o exec "/usr/bin/firefox"
+bindsym $mod+w exec wine $HOME/.wine/drive_c/Program\ Files\ \(x86\)/Watchtower/Watchtower\ Library/T/wtlibrary.exe
+
+# workspace-edit
+set $ws2 "1:Terminals "
+set $ws3 "2:Browser "
+set $ws4 "3:Files "
+
+# bind program to workspace
+assign [class="$TERM"] $ws1
+for_window [class="$TERM"] focus
+
+assign [class="(?i)firefox"] $ws2
+for_window [class=(?i)firefox] focus
+
+assign [class="thunar"] $ws3
+for_window [class=thunar] focus
+
+# workspaces names
+set $ws1 "01 "
+set $ws2 "02 "
+set $ws3 "03 "
+set $ws4 "04 "
+set $ws5 "05 "
+set $ws6 "06 "
+set $ws7 "07 "
+set $ws8 "08 "
+set $ws9 "09 "
+set $wsX "10 "
+
+# wallpaper
+exec_always feh --bg-fill --randomize ~/.local/share/wallpaper/nord/*
+#exec_always feh --bg-fill ~/.local/share/wallpaper/wp_12.png
+
+#backup packages lists:
+#exec pacman -Qqen > packages-repository.txt && pacman -Qqem > packages-AUR.txt
+
+#set powersavings for display:
+exec --no-startup-id xset s 480 dpms 600 600 600
+
+# Desktop notifications
+exec --no-startup-id /usr/bin/dunst
+
+# set floating for apps needing it
+for_window [class="Pavucontrol" instance="pavucontrol"] floating enable
+
+# welcome and others
+#for_window [class="Yad" instance="yad"] floating enable
+#for_window [class="Galculator" instance="galculator"] floating enable
+#for_window [class="Geany" instance="Geany"] floating enable
+#for_window [class="Xsane" instance="xsane"] floating enable
+#for_window [class="qt5ct" instance="qt5ct"] floating enable
+#for_window [class="calamares"] floating enable
+
+# mouse
+focus_follows_mouse no
+
+title_align center
+
+###########################################
+# Themes
+###########################################
+
+# gruvbox theme
+# class                    border		background	text		indicator
+#client.focused				#4c515d		#292d35		#f3f4f5		#a0a0a0
+#client.unfocused        	#2f343f 	#2f343f 	#676e7d 	#a0a0a0
+#client.focused_inactive 	#4c515d		#2f343f 	#676e7d 	#a0a0a0
+#client.urgent           	#e53935		#e53935		#f3f4f5		#a0a0a0
+
+# nord theme
+# class                 border			background	text		indicator
+client.focused          #81a1c1   		#81a1c1     #ffffff   	#81a1c1
+client.unfocused        #2e3440   		#1f222d     #888888   	#1f222d
+client.focused_inactive #2e3440   		#1f222d     #888888   	#1f222d
+client.urgent           #900000   		#900000     #ffffff   	#900000
+client.placeholder      #2e3440   		#1f222d     #888888   	#1f222d
+client.background       #242424
+
+# dracula theme
+# class                 	border  	bground 	text    	indicator child_border
+#client.focused          	#6272A4 	#6272A4 	#F8F8F2 	#6272A4   #6272A4
+#client.focused_inactive 	#44475A 	#44475A 	#F8F8F2 	#44475A   #44475A
+#client.unfocused        	#282A36 	#282A36 	#BFBFBF 	#282A36   #282A36
+#client.urgent           	#44475A 	#FF5555 	#F8F8F2 	#FF5555   #FF5555
+#client.placeholder      	#282A36 	#282A36 	#F8F8F2 	#282A36   #282A36
+#client.background       	#F8F8F2

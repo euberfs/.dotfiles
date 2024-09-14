@@ -1,0 +1,17 @@
+/* Rofi config file */
+configuration {
+    font: "font: "Inconsolata 8 12";";
+    show-icons: true;
+    display-window: "Window";
+    display-drun: "Search";
+}
+
+/*@theme "themes/gruvbox"*/
+/*@theme "themes/gruvbox-dark-soft"*/
+@theme "themes/nord"
+/*@theme "themes/dracula"*/
+
+
+listview {
+    lines: 12;
+}

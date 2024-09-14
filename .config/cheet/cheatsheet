@@ -1,0 +1,146 @@
+┃ vim ┃ :h[elp] keyword ┃ open help for keyword┃  
+┃ vim ┃ :sav[eas] file ┃ save file as┃  
+┃ vim ┃ :clo[se] ┃ close current pane┃  
+┃ vim ┃ :ter[minal] ┃ open a terminal window┃  
+┃ vim ┃ K ┃ open man page for word under the cursor┃  
+┃ vim ┃ h ┃ move cursor left┃  
+┃ vim ┃ j ┃ move cursor down┃  
+┃ vim ┃ k ┃ move cursor up┃  
+┃ vim ┃ l ┃ move cursor right┃  
+┃ vim ┃ gj ┃ move cursor down (multi-line text)┃  
+┃ vim ┃ gk ┃ move cursor up (multi-line text)┃  
+┃ vim ┃ H ┃ move to top of screen┃  
+┃ vim ┃ M ┃ move to middle of screen┃  
+┃ vim ┃ L ┃ move to bottom of screen┃  
+┃ vim ┃ w ┃ jump forwards to the start of a word┃  
+┃ vim ┃ W ┃ jump forwards to the start of a word (words can contain punctuation)┃  
+┃ vim ┃ e ┃ jump forwards to the end of a word┃  
+┃ vim ┃ E ┃ jump forwards to the end of a word (words can contain punctuation)┃  
+┃ vim ┃ b ┃ jump backwards to the start of a word┃  
+┃ vim ┃ B ┃ jump backwards to the start of a word (words can contain punctuation)┃  
+┃ vim ┃ ge ┃ jump backwards to the end of a word┃  
+┃ vim ┃ gE ┃ jump backwards to the end of a word (words can contain punctuation)┃  
+┃ vim ┃ % ┃ move cursor to matching character (default supported pairs: '()', '{}', '[]' ┃ use :h matchpairs in vim for more info)┃  
+┃ vim ┃ 0 ┃ jump to the start of the line┃  
+┃ vim ┃ ^ ┃ jump to the first non-blank character of the line┃  
+┃ vim ┃ $ ┃ jump to the end of the line┃  
+┃ vim ┃ g_ ┃ jump to the last non-blank character of the line┃  
+┃ vim ┃ gg ┃ go to the first line of the document┃  
+┃ vim ┃ G ┃ go to the last line of the document┃  
+┃ vim ┃ 5gg or 5G ┃ go to line 5┃  
+┃ vim ┃ gd ┃ move to local declaration┃  
+┃ vim ┃ gD ┃ move to global declaration┃  
+┃ vim ┃ fx ┃ jump to next occurrence of character x┃  
+┃ vim ┃ tx ┃ jump to before next occurrence of character x┃  
+┃ vim ┃ Fx ┃ jump to the previous occurrence of character x┃  
+┃ vim ┃ Tx ┃ jump to after previous occurrence of character x┃  
+┃ vim ┃ ; ┃ repeat previous f, t, F or T movement┃  
+┃ vim ┃ , ┃ repeat previous f, t, F or T movement, backwards┃  
+┃ vim ┃ } ┃ jump to next paragraph (or function/block, when editing code)┃  
+┃ vim ┃ { ┃ jump to previous paragraph (or function/block, when editing code)┃  
+┃ vim ┃ zz ┃ center cursor on screen┃  
+┃ vim ┃ zt ┃ position cursor on top of the screen┃  
+┃ vim ┃ zb ┃ position cursor on bottom of the screen┃  
+┃ vim ┃ Ctrl + e ┃ move screen down one line (without moving cursor)┃  
+┃ vim ┃ Ctrl + y ┃ move screen up one line (without moving cursor)┃  
+┃ vim ┃ Ctrl + b ┃ move screen up one page (cursor to last line)┃  
+┃ vim ┃ Ctrl + f ┃ move screen down one page (cursor to first line)┃  
+┃ vim ┃ Ctrl + d ┃ move cursor and screen down 1/2 page┃  
+┃ vim ┃ Ctrl + u ┃ move cursor and screen up 1/2 page┃  
+┃ vim ┃ i ┃ insert before the cursor┃  
+┃ vim ┃ I ┃ insert at the beginning of the line┃  
+┃ vim ┃ a ┃ insert (append) after the cursor┃  
+┃ vim ┃ A ┃ insert (append) at the end of the line┃  
+┃ vim ┃ o ┃ append (open) a new line below the current line┃  
+┃ vim ┃ O ┃ append (open) a new line above the current line┃  
+┃ vim ┃ ea ┃ insert (append) at the end of the word┃  
+┃ vim ┃ Ctrl + h ┃ delete the character before the cursor during insert mode┃  
+┃ vim ┃ Ctrl + w ┃ delete word before the cursor during insert mode┃  
+┃ vim ┃ Ctrl + j ┃ add a line break at the cursor position during insert mode┃  
+┃ vim ┃ Ctrl + t ┃ indent (move right) line one shiftwidth during insert mode┃  
+┃ vim ┃ Ctrl + d ┃ de-indent (move left) line one shiftwidth during insert mode┃  
+┃ vim ┃ Ctrl + n ┃ insert (auto-complete) next match before the cursor during insert mode┃  
+┃ vim ┃ Ctrl + p ┃ insert (auto-complete) previous match before the cursor during insert mode┃  
+┃ vim ┃ Ctrl + rx ┃ insert the contents of register x┃  
+┃ vim ┃ Ctrl + ox ┃ Temporarily enter normal mode to issue one normal-mode command x.┃  
+┃ vim ┃ Esc or Ctrl + c ┃ exit insert mode┃  
+┃ vim ┃ r ┃ replace a single character.┃  
+┃ vim ┃ R ┃ replace more than one character, until ESC is pressed.┃  
+┃ vim ┃ J ┃ join line below to the current one with one space in between┃  
+┃ vim ┃ gJ ┃ join line below to the current one without space in between┃  
+┃ vim ┃ gwip ┃ reflow paragraph┃  
+┃ vim ┃ g~ ┃ switch case up to motion┃  
+┃ vim ┃ gu ┃ change to lowercase up to motion┃  
+┃ vim ┃ gU ┃ change to uppercase up to motion┃  
+┃ vim ┃ cc ┃ change (replace) entire line┃  
+┃ vim ┃ c$ or C ┃ change (replace) to the end of the line┃  
+┃ vim ┃ ciw ┃ change (replace) entire word┃  
+┃ vim ┃ cw or ce ┃ change (replace) to the end of the word┃  
+┃ vim ┃ s ┃ delete character and substitute text┃  
+┃ vim ┃ S ┃ delete line and substitute text (same as cc)┃  
+┃ vim ┃ xp ┃ transpose two letters (delete and paste)┃  
+┃ vim ┃ u ┃ undo┃  
+┃ vim ┃ U ┃ restore (undo) last changed line┃  
+┃ vim ┃ Ctrl + r ┃ redo┃  
+┃ vim ┃ . ┃ repeat last command┃  
+┃ vim ┃ v ┃ start visual mode, mark lines, then do a command (like y-yank)┃  
+┃ vim ┃ V ┃ start linewise visual mode┃  
+┃ vim ┃ o ┃ move to other end of marked area┃  
+┃ vim ┃ Ctrl + v ┃ start visual block mode┃  
+┃ vim ┃ O ┃ move to other corner of block┃  
+┃ vim ┃ aw ┃ mark a word┃  
+┃ vim ┃ ab ┃ a block with ()┃  
+┃ vim ┃ aB ┃ a block with {}┃  
+┃ vim ┃ at ┃ a block with <> tags┃  
+┃ vim ┃ ib ┃ inner block with ()┃  
+┃ vim ┃ iB ┃ inner block with {}┃  
+┃ vim ┃ it ┃ inner block with <> tags┃  
+┃ vim ┃ Esc or Ctrl + c ┃ exit visual mode┃  
+┃ vim ┃ > ┃ shift text right┃  
+┃ vim ┃ < ┃ shift text left┃  
+┃ vim ┃ y ┃ yank (copy) marked text┃  
+┃ vim ┃ d ┃ delete marked text┃  
+┃ vim ┃ ~ ┃ switch case┃  
+┃ vim ┃ u ┃ change marked text to lowercase┃  
+┃ vim ┃ U ┃ change marked text to uppercase┃  
+┃ vim ┃ :reg[isters] ┃ show registers content┃  
+┃ vim ┃ "xy ┃ yank into register x┃  
+┃ vim ┃ "xp ┃ paste contents of register x┃  
+┃ vim ┃ "+y ┃ yank into the system clipboard register┃  
+┃ vim ┃ "+p ┃ paste from the system clipboard register┃  
+┃ vim ┃ 0 ┃ last yank┃  
+┃ vim ┃ " ┃ unnamed register, last delete or yank┃  
+┃ vim ┃ % ┃ current file name┃  
+┃ vim ┃ # ┃ alternate file name┃  
+┃ vim ┃ * ┃ clipboard contents (X11 primary)┃  
+┃ vim ┃ + ┃ clipboard contents (X11 clipboard)┃  
+┃ vim ┃ / ┃ last search pattern┃  
+┃ vim ┃ : ┃ last command-line┃  
+┃ vim ┃ . ┃ last inserted text┃  
+┃ vim ┃ - ┃ last small (less than
+┃ Terminal ┃ CTRL+A  ┃ Quickly move to the beginning of line. ┃
+┃ Terminal ┃ CTRL+B  ┃ To move backward one character. ┃
+┃ Terminal ┃ CTRL+C  ┃ Stop the currently running command ┃
+┃ Terminal ┃ CTRL+D  ┃ Delete one character backward. ┃
+┃ Terminal ┃ CTRL+E  ┃ Move to the end of line ┃
+┃ Terminal ┃ CTRL+F  ┃ Move forward one character ┃
+┃ Terminal ┃ CTRL+G  ┃ Leave the history searching mode without running the command. ┃
+┃ Terminal ┃ CTRL+H  ┃ Delete the characters before the cursor, same as BASKSPACE. ┃
+┃ Terminal ┃ CTRL+J  ┃ Same as ENTER/RETURN key. ┃
+┃ Terminal ┃ CTRL+K  ┃ Delete all characters after the cursor. ┃
+┃ Terminal ┃ CTRL+L ┃ Terminal ┃ Clears the screen and redisplay the line. ┃
+┃ Terminal ┃ CTRL+M  ┃ Same as CTRL+J or RETURN. ┃
+┃ Terminal ┃ CTRL+N  ┃ Display next line in command history. ┃
+┃ Terminal ┃ CTRL+O  ┃ Run the command that you found using reverse search i.e CTRL+R. ┃
+┃ Terminal ┃ CTRL+P  ┃ Displays the previous line in command history. ┃
+┃ Terminal ┃ CTRL+R  ┃ Searches the history backward (Reverse search). ┃
+┃ Terminal ┃ CTRL+S  ┃ Searches the history forward. ┃
+┃ Terminal ┃ CTRL+T  ┃ Swaps the last two characters. ┃
+┃ Terminal ┃ CTRL+U  ┃ Delete all characters before the cursor (Kills backward from point to the beginning of line). ┃
+┃ Terminal ┃ CTRL+V  ┃ Makes the next character typed verbatim ┃
+┃ Terminal ┃ CTRL+W  ┃ Delete the words before the cursor. ┃
+┃ Terminal ┃ CTRL+X  ┃ Lists the possible filename completions of the current word. ┃
+┃ Terminal ┃ CTRL+XX  ┃ Move between start of command line and current cursor position (and back again). ┃
+┃ Terminal ┃ CTRL+Y  ┃  Retrieves last item that you deleted or cut. ┃
+┃ Terminal ┃ CTRL+Z  ┃ Stops the current command. ┃
+┃ Terminal ┃ CTRL+[  ┃ Equivalent to ESC key. ┃
