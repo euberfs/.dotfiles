@@ -280,8 +280,8 @@ dracula
 	sudo hp-setup -i
 	
 # polybar  
-- [GitHub](https://github.com/polybar/polybar)
-  - **Polybar**: Uma barra de status altamente personalizável para o sistema X Window.
+- [GitHub](https://github.com/polybar/polybar): Uma barra de status altamente personalizável para o sistema X Window.
+    
 Clone o repositório de temas da polybar e execute o script de instalação.
 
 ```bash
