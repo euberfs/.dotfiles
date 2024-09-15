@@ -280,7 +280,7 @@ dracula
 	sudo hp-setup -i
 	
 # polybar  
-- [GitHub](https://github.com/polybar/polybar): Uma barra de status altamente personalizável para o sistema X Window.
+- [GitHub](https://github.com/polybar/polybar): *Uma barra de status altamente personalizável para o sistema X Window.*
     
 Clone o repositório de temas da polybar e execute o script de instalação.
 
@@ -291,6 +291,8 @@ cd polybar-themes && chmod +x setup.sh
 ```
 
 # yay  
+- [GitHub](https://github.com/Jguer/yay): *Um ajudante do AUR escrito em Go que visa ser mais rápido e mais rico em recursos do que os ajudantes existentes.*
+
 Clone o repositório do yay, compile e instale o pacote, e remova o diretório temporário.
 
 ```bash
@@ -302,16 +304,15 @@ rm -r yay
 Aplicativos
 Alguns pacotes úteis para instalar, como espanso, taskwarrior, dropbox, entre outros.
 
-```bash
-espanso-x11
-taskwarrior-tui
-dropbox
-timer-bin
-lf-git
-sc-im
-networkmanager-dmenu
-perl-image-exiftool
-```
+- **Espanso-x11**: [GitHub](https://github.com/espanso/espanso): *Espanso é um expansor de texto de código aberto para o X11.*
+- **Taskwarrior-tui**: [GitHub](https://github.com/taskwarrior/taskwarrior-tui): *Uma interface de usuário de terminal para o Taskwarrior, um gerenciador de tarefas de código aberto.*
+- **Dropbox**: [GitHub](https://github.com/dropbox/dropbox): *O cliente oficial do Dropbox para sincronização de arquivos.*
+- **Timer-bin**: [GitHub](https://github.com/timer/timer-bin): *Um temporizador de linha de comando simples e fácil de usar.*
+- **lf-git**: [GitHub](https://github.com/gokcehan/lf): *Um gerenciador de arquivos de terminal escrito em Go.*
+- **sc-im**: [GitHub](https://github.com/sc-im/sc-im): *Um editor de planilhas de linha de comando altamente configurável.*
+- **networkmanager-dmenu**: [GitHub](https://github.com/networkmanager/networkmanager-dmenu): *Uma interface de menu para o NetworkManager usando dmenu.*
+- **perl-image-exiftool**: [GitHub](https://github.com/exiftool/exiftool): *Uma ferramenta para ler, escrever e editar metadados de arquivos de imagem.*
+
 
 # bluetooth
 
@@ -342,6 +343,8 @@ sudo systemctl restart bluetooth
 ```
 
 # tmux  
+- [GitHub](https://github.com/tmux/tmux): *Um multiplexador de terminal que permite gerenciar várias sessões de terminal a partir de uma única janela.*
+
 Clone o gerenciador de plugins do Tmux e use o comando específico para carregar as configurações.
 
 ```bash
@@ -353,6 +356,8 @@ tmux source ~/.tmux.conf
 Pressione `prefix + I` para buscar o plugin.
 
 # fish  
+- [GitHub](https://github.com/fish-shell/fish-shell): *Um shell de linha de comando amigável para sistemas operacionais semelhantes ao UNIX.*
+
 Defina o Fish como o shell padrão, configure o tema e instale o gerenciador de plugins. 
 
 ```bash
@@ -385,6 +390,8 @@ omf install archlinux
 ```
 
 # fzf  
+- [GitHub](https://github.com/junegunn/fzf): *Um buscador difuso de linha de comando de propósito geral.*
+
 Clone o fzf e instale-o.
 
 ```bash
@@ -398,6 +405,8 @@ set -Ux FZF_DEFAULT_OPTS "--color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9 --color=fg+:#
 ```
 
 # Vim-Instant-Markdown  
+- [GitHub](https://github.com/suan/vim-instant-markdown): *Renderização instantânea de Markdown para o Vim.*
+
 Instale o plugin de Markdown instantâneo para o Vim usando npm.
 
 ```bash
@@ -405,6 +414,8 @@ sudo npm -g install instant-markdown-d
 ```
 
 # lf  
+- [GitHub](https://github.com/gokcehan/lf): *Um gerenciador de arquivos de terminal escrito em Go.*
+
 Clone o repositório e compile o aplicativo.
 
 ```bash
@@ -414,6 +425,8 @@ sudo make install
 ```
 
 # Podgrab  
+- [GitHub](https://github.com/ahmedbodi/podgrab): *Um servidor de download de podcasts escrito em Go.*
+
 Clone e instale o Podgrab para gerenciar podcasts.
 
 ```bash
@@ -432,6 +445,8 @@ sudo make install
 ```
 
 # npm  
+- [GitHub](https://github.com/npm/cli): *O gerenciador de pacotes para JavaScript, usado para instalar e gerenciar pacotes.*
+
 Instale pacotes npm globalmente, como wikit, tldr e nativefier.
 
 ```bash
@@ -457,7 +472,9 @@ sudo usermod -aG vboxusers $USER
 groups $USER
 ```
 
-# Joplin  
+# Joplin 
+- [GitHub](https://github.com/laurent22/joplin): *Um aplicativo de anotações e tarefas de código aberto com capacidades de sincronização.*
+ 
 Instale o Joplin na versão CLI ou GUI e configure a sincronização com o Dropbox.
 
 ```bash
@@ -477,6 +494,9 @@ wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_
 ```
 
 # ncmpcpp and mpd  
+- [GitHub](https://github.com/arybczak/ncmpcpp): *Um cliente MPD de linha de comando com uma interface poderosa e personalizável.*
+- [GitHub](https://github.com/MPD/MPD): *Music Player Daemon, uma aplicação flexível e servidor para tocar música.*
+
 Crie os diretórios necessários para o ncmpcpp e o mpd, e configure o serviço do mpd.
 
 ```bash
@@ -489,6 +509,8 @@ sudo nano /etc/systemd/system/mpd.service
 ```
 
 # newsboat  
+- [GitHub](https://github.com/newsboat/newsboat): *Um leitor de feeds RSS/Atom para o console de texto.*
+
 Instruções para encontrar o ID de um canal do YouTube para adicionar no Newsboat.
 
 ```bash
@@ -496,6 +518,8 @@ https://takeout.google.com/
 ```
 
 # mutt  
+- [GitHub](https://github.com/mutt/mutt): *Um pequeno, mas muito poderoso cliente de e-mail baseado em texto.*
+
 Configure pastas e arquivos para o cliente de e-mails Mutt.
 
 ```bash
@@ -505,6 +529,8 @@ cp ~/.dotfiles/mutt/muttrc ~/.config/mutt/
 ```
 
 # cheet  
+- [GitHub](https://github.com/cheat/cheat): *Uma ferramenta de linha de comando que permite criar e visualizar cheatsheets interativas.*
+
 Clone o repositório e torne o arquivo executável.
 
 ```bash
