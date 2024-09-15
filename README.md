@@ -302,7 +302,6 @@ rm -r yay
 ```
 
 Aplicativos
-Alguns pacotes úteis para instalar, como espanso, taskwarrior, dropbox, entre outros.
 
 - **Espanso-x11**: [GitHub](https://github.com/espanso/espanso): *Espanso é um expansor de texto de código aberto para o X11.*
 - **Taskwarrior-tui**: [GitHub](https://github.com/taskwarrior/taskwarrior-tui): *Uma interface de usuário de terminal para o Taskwarrior, um gerenciador de tarefas de código aberto.*
