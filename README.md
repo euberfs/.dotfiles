@@ -23,9 +23,6 @@
 - [Corrigir o erro "unable to lock database" no Arch Linux](#corrigir-o-erro--unable-to-lock-database--no-arch-linux)
 - [Remover pacotes órfãos](#remover-pacotes--rf-os)
 - [Se houver erro "externally-managed-environment"](#se-houver-erro--externally-managed-environment-)
-- [Problemas de som com múltiplas placas](#problemas-de-som-com-m-ltiplas-placas)
-- [Adicionar este conteúdo em alsa-base.conf (troca as placas de som, então 1 é padrão)](#adicionar-este-conte-do-em-alsa-baseconf--troca-as-placas-de-som--ent-o-1---padr-o-)
-- [Habilitar áudio](#habilitar--udio)
 - [Atualizar fontes](#atualizar-fontes)
 - [Remover pacotes órfãos](#remover-pacotes--rf-os-1)
 - [Snapshot com Timeshift](#snapshot-com-timeshift)
@@ -215,23 +212,6 @@ Dotfiles
 # Se houver erro "externally-managed-environment"
 
 	sudo rm /usr/lib/pythonXXX/EXTERNALLY-MANAGED
-
-# Problemas de som com múltiplas placas
-
-	sudo vim /etc/modprobe.d/alsa-base.conf
-
-# Adicionar este conteúdo em alsa-base.conf (troca as placas de som, então 1 é padrão)
-options snd-hda-intel index=1,0l
-
-# Habilitar áudio
-
-	sudo nvim /etc/asound.conf
-
-	defaults.pcm.card 1
-	defaults.pcm.device 0
-	defaults.ctl.card 1
-
-	amixer sset Master unmute
 
 # Atualizar fontes
 

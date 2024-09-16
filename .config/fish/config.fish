@@ -83,6 +83,26 @@ alias ll='exa -l --color=always --group-directories-first'  # long format
 alias lt='exa -aT --color=always --group-directories-first' # tree listing
 alias l.='exa -a | egrep "^\."'
 
+
+# youtube-dl
+# Atualizar o yt-dlp
+alias ydlu='yt-dlp -U'
+
+# Baixar apenas o áudio de um vídeo
+alias ydla='yt-dlp -x --audio-format mp3'
+
+# Baixar um vídeo em qualidade máxima
+alias ydlb='yt-dlp -f best'
+
+# Baixar uma playlist inteira
+alias ydlp='yt-dlp -f best --yes-playlist'
+
+# Baixar legendas junto com o vídeo
+alias ydls='yt-dlp --write-sub --sub-lang en'
+
+# Baixar um vídeo específico
+alias ydl-download='yt-dlp'
+
 # git
 alias addall='git add .'
 alias add='git add '

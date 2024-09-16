@@ -29,10 +29,9 @@ links=(
     "$HOME/.dotfiles/.config/i3/disable-touchscreen.sh $HOME/.config/i3/disable-touchscreen.sh"
     "$HOME/.dotfiles/.config/joplin/keymap.json $HOME/.config/joplin/keymap.json"
     "$HOME/.dotfiles/.config/joplin/settings.json $HOME/.config/joplin/settings.json"
-    "$HOME/.dotfiles/.config/jrnl/jrnl.yaml $HOME/.config/jrnl/jrnl.yaml"
-    "$HOME/.dotfiles/.config/khal/config $HOME/.config/khal/config"
     "$HOME/.dotfiles/.config/kitty/kitty.conf $HOME/.config/kitty/kitty.conf"
-    "$HOME/.dotfiles/.config/lf $HOME/.config/lf"
+    "$HOME/.dotfiles/.config/jrnl/jrnl.yaml $HOME/.config/jrnl/jrnl.yaml"
+    "$HOME/.dotfiles/.config/mc/ini $HOME/.config/mc/ini"
     "$HOME/.dotfiles/.config/mc/ini $HOME/.config/mc/ini"
     "$HOME/.dotfiles/.config/mpd/mpd.conf $HOME/.config/mpd/mpd.conf"
     "$HOME/.dotfiles/.config/mutt/themes $HOME/.config/mutt/themes"
@@ -54,6 +53,15 @@ links=(
 	
 	"$HOME/.dotfiles/.local/share/mc $HOME/.local/share/mc"
 	"$HOME/.dotfiles/.local/share/wallpaper $HOME/.local/share/wallpaper"
+	
+# Private	
+
+	 "$HOME/Dropbox/Aplicativos/mutt/muttrc $HOME/.config/mutt/muttrc"
+	 "$HOME/Dropbox/Aplicativos/espanso/personal.yml $HOME/.config/espanso/match/personal.yml"
+	 "$HOME/Dropbox/Aplicativos/jrnl/journal.txt $HOME/.local/share/jrnl/journal.txt"
+	 #"$HOME/Dropbox/Aplicativos/khal/*.ics $HOME/.config/khal/"
+	 "$HOME/Dropbox/Aplicativos/newsboat/urls $HOME/.config/newsboat/urls"
+	 "$HOME/Dropbox/Aplicativos/.qn $HOME/.qn"
 )
 
 # Criação dos links simbólicos
