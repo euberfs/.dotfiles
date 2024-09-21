@@ -26,9 +26,10 @@ endif
 call plug#begin()
 
         "Plug 'morhetz/gruvbox'
-        Plug 'arcticicestudio/nord-vim'
+        "Plug 'arcticicestudio/nord-vim'
         "Plug 'dracula/vim', { 'as': 'dracula' }
-        
+        Plug 'sainnhe/sonokai'
+
         Plug 'vimwiki/vimwiki'
         Plug 'preservim/nerdtree'
         Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
@@ -43,5 +44,8 @@ call plug#begin()
         Plug 'makerj/vim-pdf'
         Plug 'instant-markdown/vim-instant-markdown', {'for': ['markdown', 'markdown.pandoc']}
         Plug 'plasticboy/vim-markdown', {'for': 'markdown'}
+        Plug 'dbmrq/vim-ditto'
+        Plug 'preservim/vim-pencil'
+        Plug 'preservim/vim-colors-pencil'
 
 call plug#end()

@@ -1,4 +1,3 @@
-
 set autoread         " Update vim after file update from outside
 set cmdheight=2      " Give more space for displaying messages
 set colorcolumn=100  " Draws a line at the given line to keep aware of the line size

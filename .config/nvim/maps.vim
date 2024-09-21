@@ -1,3 +1,5 @@
+let mapleader = ","
+
 " Replace ESC
     imap jj <Esc>
 

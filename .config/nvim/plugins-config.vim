@@ -17,9 +17,24 @@ nnoremap <leader>s :call FzyCommand("find . -type f", ":sp")<cr>
 " Theme
 "========================================================
 "colorscheme gruvbox
-colorscheme nord
+"colorscheme nord
 "colorscheme dracula
+color sonokai
 
+"========================================================
+" vim-pencil
+"========================================================
+
+" Enable the Pencil plugin
+let g:pencil#wrap_mode = 'hard'            " Options: 'hard' or 'soft'
+let g:pencil#textwidth = 80                 " Set the text width
+let g:pencil#auto_indent = 1                 " Enable auto-indentation
+let g:pencil#ignore_filetypes = ['markdown', 'text'] " Filetypes to ignore
+let g:pencil#format_on_save = 1              " Auto-format on save
+let g:pencil#fill_char = ' '                  " Character for filling
+
+" Key mappings for vim-pencil
+nnoremap <leader>p :Pencil<CR>               " Toggle Pencil mode
 
 "========================================================
 " Autocmd
@@ -47,8 +62,29 @@ let g:airline_statusline_ontop=1
 
 " themes
 "let g:airline_theme='gruvbox'
-let g:airline_theme='nord'
+"let g:airline_theme='nord'
 "let g:airline_theme='dracula'
+let g:airline_theme = 'pencil'
+
+"========================================================
+" Ditto
+"========================================================
+" Use autocmds to check your text automatically and keep the highlighting
+" up to date (easier):
+au FileType markdown,text,tex DittoOn  " Turn on Ditto's autocmds
+nmap <leader>di <Plug>ToggleDitto      " Turn Ditto on and off
+
+" If you don't want the autocmds, you can also use an operator to check
+" specific parts of your text:
+" vmap <leader>d <Plug>Ditto	       " Call Ditto on visual selection
+" nmap <leader>d <Plug>Ditto	       " Call Ditto on operator movement
+
+nmap =d <Plug>DittoNext                " Jump to the next word
+nmap -d <Plug>DittoPrev                " Jump to the previous word
+nmap +d <Plug>DittoGood                " Ignore the word under the cursor
+nmap _d <Plug>DittoBad                 " Stop ignoring the word under the cursor
+nmap ]d <Plug>DittoMore                " Show the next matches
+nmap [d <Plug>DittoLess                " Show the previous matches
 
 "========================================================
 " Ale
@@ -75,8 +111,8 @@ let g:limelight_conceal_guifg = '#777777'
 "autocmd VimEnter * Limelight " Start Limelight and leave the cursor in it
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
-nnoremap <leader><ENTER> :Goyo<CR>
-
+"nnoremap <leader><ENTER> :Goyo<CR>
+autocmd VimEnter * Goyo|Limelight
 
 "========================================================
 "   FZF

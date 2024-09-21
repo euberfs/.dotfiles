@@ -74,7 +74,7 @@ alias note="joplin"
 alias yt="pipe-viewer"
 alias tt="taskwarrior-tui"
 alias qnl="qnl | fzf"
-alias cs="bash $HOME/cheet/cheet"
+alias cs="bash ~/.config/cheet/cheet"
 
 # Changing "ls" to "exa"
 alias ls='exa -al --color=always --group-directories-first' # my preferred listing
@@ -96,6 +96,9 @@ alias ydlb='yt-dlp -f best'
 
 # Baixar uma playlist inteira
 alias ydlp='yt-dlp -f best --yes-playlist'
+
+# Baixar uma playlist inteira e converter para mp3
+alias ydl-pmp3='youtube-dl -x --audio-format mp3'
 
 # Baixar legendas junto com o vídeo
 alias ydls='yt-dlp --write-sub --sub-lang en'
