@@ -144,3 +144,50 @@
 ┃ Terminal ┃ CTRL+Y  ┃  Retrieves last item that you deleted or cut. ┃
 ┃ Terminal ┃ CTRL+Z  ┃ Stops the current command. ┃
 ┃ Terminal ┃ CTRL+[  ┃ Equivalent to ESC key. ┃
+┃ rclone ┃ rclone ls remote:/ ┃ List files in a remote ┃
+┃ rclone ┃ rclone copy source: destination: ┃ Copy files from one remote to another ┃
+┃ rclone ┃ rclone sync source: destination: ┃ Sync directories (copy new files and update existing ones) ┃
+┃ rclone ┃ rclone move source: destination: ┃ Move files from one remote to another ┃
+┃ rclone ┃ rclone ls gdrive:/folder ┃ List files in a specific folder on Google Drive ┃
+┃ rclone ┃rclone mount remote: /path/to/mount  ┃ Mount a remote as a filesystem ┃
+┃ rclone ┃ rclone cleanup remote: ┃ Clean up old files from a remote ┃
+┃ VimWiki ┃<leader> ww  ┃open wiki index file ┃
+┃ VimWiki ┃<leader> wt ┃open wiki index file in new tab ┃
+┃ VimWiki ┃ <leader> ws ┃list and select available wikis ┃
+┃ VimWiki ┃ <leader> wd ┃delete wiki page ┃
+┃ VimWiki ┃<leader> wr ┃ rename wiki page┃
+┃ VimWiki ┃<leader> wi ┃open diary index file for wiki ┃
+┃ VimWiki ┃ <leader> w <leader> i ┃update current diary index ┃
+┃ VimWiki ┃<leader> w <leader> w ┃open today’s diary file for wiki ┃
+┃ VimWiki ┃ [number] <leader> w <leader> t ┃open today’s diary file for wiki in new tab ┃
+┃ VimWiki ┃ <C-Up> ┃ open previous day’s diary┃
+┃ VimWiki ┃ <C-Down> ┃open next day’s diary ┃
+┃ VimWiki ┃ <CR> ┃follow/create wiki link ┃
+┃ VimWiki ┃ <C-S-CR> ┃follow/create wiki link in new tab ┃
+┃ VimWiki ┃ <backspace> ┃ go back to previous wiki page┃
+┃ VimWiki ┃ <Tab> ┃ go to next link on current page ┃
+┃ VimWiki ┃<S-Tab> ┃go to previous link on current page ┃
+┃ VimWiki ┃ <C-Space> ┃toggle list item on/off ┃
+┃ VimWiki ┃= ┃ add header level┃
+┃ VimWiki ┃ - ┃remove header level ┃
+┃ VimWiki ┃ + ┃create/decorate links ┃
+┃ VimWiki ┃ glm ┃ increase indent of list item┃
+┃ VimWiki ┃ gll┃decrease indent of list item ┃
+┃ VimWiki ┃gl* or gl8 ┃switch or insert “*” symbol ┃
+┃ VimWiki ┃ gl# or gl3 ┃switch or insert “#” symbol ┃
+┃ VimWiki ┃ gl ┃ switch or insert “-“ symbol┃
+┃ VimWiki ┃ gl1 ┃switch or insert “1.” symbol ┃
+┃ VimWiki ┃ <A-Left> ┃move column left ┃
+┃ VimWiki ┃ <A-right> ┃move column right ┃
+┃ VimWiki ┃ <CR> ┃(insert mode) go down/create cell ┃
+┃ VimWiki ┃ <Tab> ┃ (insert mode) go next/create cell┃
+┃ VimWiki ┃ gqq or gww ┃reformat table ┃
+
+
+    
+
+
+
+
+
+

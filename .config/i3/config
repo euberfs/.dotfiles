@@ -169,7 +169,7 @@ bindsym $mod+Print exec scrot -u ~/Pictures/Screenshots/Screenshot_%Y-%m-%d_%H-%
 bindsym $mod+Shift+n exec $TERM -e newsboat
 
 bindsym $mod+Ctrl+f exec thunar
-bindsym $mod+Ctrl+i exec $TERM -e bash $HOME/cheet/cheet
+bindsym $mod+Ctrl+i exec $TERM -e bash $HOME/.config/cheet/cheet
 bindsym $mod+Ctrl+j exec $TERM -e jrnl
 bindsym $mod+Ctrl+k exec $TERM -e khal interactive
 bindsym $mod+Ctrl+q exec $TERM -e qn

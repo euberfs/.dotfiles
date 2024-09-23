@@ -423,6 +423,12 @@ cd Quick-Note && make
 sudo make install
 ```
 
+# VimWiki
+
+```bash
+chmod +x ~/.config/nvim/generate-vimwiki-diary-template
+```
+
 # npm  
 - [GitHub](https://github.com/npm/cli): *O gerenciador de pacotes para JavaScript, usado para instalar e gerenciar pacotes.*
 
