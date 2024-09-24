@@ -85,26 +85,27 @@ alias l.='exa -a | egrep "^\."'
 
 
 # youtube-dl
-# Atualizar o yt-dlp
+# Update yt-dlp
 alias ydlu='yt-dlp -U'
 
-# Baixar apenas o áudio de um vídeo
+# Download only the audio of a video
 alias ydla='yt-dlp -x --audio-format mp3'
 
-# Baixar um vídeo em qualidade máxima
+# Download a video in the highest quality
 alias ydlb='yt-dlp -f best'
 
-# Baixar uma playlist inteira
+# Download an entire playlist
 alias ydlp='yt-dlp -f best --yes-playlist'
 
-# Baixar uma playlist inteira e converter para mp3
-alias ydl-pmp3='youtube-dl -x --audio-format mp3'
+# Download an entire playlist and convert to mp3
+alias ydl-pmp3='yt-dlp -x --audio-format mp3'
 
-# Baixar legendas junto com o vídeo
+# Download subtitles along with the video
 alias ydls='yt-dlp --write-sub --sub-lang en'
 
-# Baixar um vídeo específico
+# Download a specific video
 alias ydl-download='yt-dlp'
+
 
 # git
 alias addall='git add .'

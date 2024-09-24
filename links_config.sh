@@ -47,21 +47,17 @@ links=(
 	"$HOME/.dotfiles/dotfiles_home/.tmux.conf $HOME/.tmux.conf"
 	"$HOME/.dotfiles/dotfiles_home/.xinitrc $HOME/.xinitrc"
 	
-	"$HOME/.dotfiles/.local/bin/apps.sh $HOME/.local/bin/apps.sh"
 	"$HOME/.dotfiles/.local/bin/ifinstalled $HOME/.local/bin/ifinstalled"
-	"$HOME/.dotfiles/.local/bin/sync_dotfiles.sh $HOME/.local/bin/sync_dotfiles.sh"
 	
 	"$HOME/.dotfiles/.local/share/mc $HOME/.local/share/mc"
 	"$HOME/.dotfiles/.local/share/wallpaper $HOME/.local/share/wallpaper"
 	
 # Private	
 
-	 "$HOME/Dropbox/Aplicativos/mutt/muttrc $HOME/.config/mutt/muttrc"
-	 "$HOME/Dropbox/Aplicativos/espanso/personal.yml $HOME/.config/espanso/match/personal.yml"
-	 "$HOME/Dropbox/Aplicativos/jrnl/journal.txt $HOME/.local/share/jrnl/journal.txt"
-	 #"$HOME/Dropbox/Aplicativos/khal/*.ics $HOME/.config/khal/"
-	 "$HOME/Dropbox/Aplicativos/newsboat/urls $HOME/.config/newsboat/urls"
-	 "$HOME/Dropbox/Aplicativos/.qn $HOME/.qn"
+	 "$HOME/.private/.config/mutt/muttrc $HOME/.config/mutt/muttrc"
+	 "$HOME/.private/.config/espanso/personal.yml $HOME/.config/espanso/match/personal.yml"
+	 "$HOME/.private/.config/newsboat/urls $HOME/.config/newsboat/urls"
+	 "$HOME/.private/.qn $HOME/.qn"
 )
 
 # Criação dos links simbólicos

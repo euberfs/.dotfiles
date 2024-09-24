@@ -1,6 +1,8 @@
 set $mod Mod4
 set $TERM alacritty
 
+bindsym F1 exec $TERM -e nvim ~/.dotfiles/shortcuts.md
+
 # workspace layouts:
 workspace_layout tabbed
 
@@ -23,8 +25,8 @@ hide_edge_borders both
 floating_modifier $mod
 
 # Language keyboards
-bindsym $mod+Ctrl+b exec setxkbmap -layout br && notify-send "Layout do teclado: Português (BR)"
-bindsym $mod+Ctrl+u exec setxkbmap -layout us && notify-send "Layout do teclado: Inglês (US)"
+#bindsym $mod+Ctrl+b exec setxkbmap -layout br && notify-send "Layout do teclado: Português (BR)"
+#bindsym $mod+Ctrl+u exec setxkbmap -layout us && notify-send "Layout do teclado: Inglês (US)"
 
 # start a terminal
 bindsym $mod+Return exec $TERM
@@ -135,12 +137,12 @@ mode "resize" {
 }
 
 # Multimedia Keys
-bindsym F1 exec pactl set-sink-mute @DEFAULT_SINK@ toggle
-bindsym F2 exec pactl set-sink-volume @DEFAULT_SINK@ -5%
-bindsym F3 exec pactl set-sink-volume @DEFAULT_SINK@ +5%
-bindsym F4 exec playerctl previous
-bindsym F5 exec playerctl play-pause
-bindsym F6 exec playerctl next
+bindsym $mod+Ctrl+m exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym $mod+Ctrl+Down exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym $mod+Ctrl+Up exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym $mod+Ctrl+Left exec playerctl previous
+bindsym $mod+Ctrl+Right exec playerctl next
+bindsym $mod+Ctrl+p exec playerctl play-pause
 
 # +10 brightness 
 bindsym F12 exec xrandr --output $(xrandr | grep " connected" | cut -d ' ' -f1) --brightness $(echo "$(xrandr --verbose | grep -i brightness | awk '{print $2}') + 0.1" | bc)
@@ -167,12 +169,12 @@ bindsym Shift+Print exec scrot -s ~/Pictures/Screenshots/Screenshot_%Y-%m-%d_%H-
 bindsym $mod+Print exec scrot -u ~/Pictures/Screenshots/Screenshot_%Y-%m-%d_%H-%M-%S.png
 
 bindsym $mod+Shift+n exec $TERM -e newsboat
-
 bindsym $mod+Ctrl+f exec thunar
 bindsym $mod+Ctrl+i exec $TERM -e bash $HOME/.config/cheet/cheet
 bindsym $mod+Ctrl+j exec $TERM -e jrnl
 bindsym $mod+Ctrl+k exec $TERM -e khal interactive
 bindsym $mod+Ctrl+q exec $TERM -e qn
+bindsym $mod+Ctrl+w exec $TERM -e nvim ~/vimwiki/index.md
 
 bindsym $mod+e exec $TERM -e mutt
 bindsym $mod+i exec $TERM -e nvim ~/.config/i3/config

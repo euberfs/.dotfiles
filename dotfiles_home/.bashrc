@@ -13,4 +13,3 @@ PS1='[\u@\h \W]\$ '
 
 # Disable history logging for jrnl
 HISTIGNORE="$HISTIGNORE:jrnl *"
-
