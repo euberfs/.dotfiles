@@ -48,16 +48,9 @@ links=(
 	"$HOME/.dotfiles/dotfiles_home/.xinitrc $HOME/.xinitrc"
 	
 	"$HOME/.dotfiles/.local/bin/ifinstalled $HOME/.local/bin/ifinstalled"
-	
 	"$HOME/.dotfiles/.local/share/mc $HOME/.local/share/mc"
 	"$HOME/.dotfiles/.local/share/wallpaper $HOME/.local/share/wallpaper"
 	
-# Private	
-
-	 "$HOME/.private/.config/mutt/muttrc $HOME/.config/mutt/muttrc"
-	 "$HOME/.private/.config/espanso/personal.yml $HOME/.config/espanso/match/personal.yml"
-	 "$HOME/.private/.config/newsboat/urls $HOME/.config/newsboat/urls"
-	 "$HOME/.private/.qn $HOME/.qn"
 )
 
 # Criação dos links simbólicos

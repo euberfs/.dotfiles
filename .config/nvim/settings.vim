@@ -32,3 +32,5 @@ filetype on          " Detect and set the filetype option and trigger the FileTy
 filetype plugin on   " Load the plugin file for the file type, if any
 filetype indent on   " Enable indentation rules that are file-type specific.
 
+" Aggregate all vim swap files to a one place
+set directory^=$HOME/.config/nvim/swapfiles//

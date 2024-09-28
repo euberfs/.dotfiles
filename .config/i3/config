@@ -26,7 +26,7 @@ floating_modifier $mod
 
 # Language keyboards
 #bindsym $mod+Ctrl+b exec setxkbmap -layout br && notify-send "Layout do teclado: Português (BR)"
-#bindsym $mod+Ctrl+u exec setxkbmap -layout us && notify-send "Layout do teclado: Inglês (US)"
+bindsym $mod+Ctrl+u exec setxkbmap -layout us && notify-send "Layout do teclado: Inglês (US)"
 
 # start a terminal
 bindsym $mod+Return exec $TERM
@@ -168,23 +168,21 @@ bindsym Print exec scrot ~/Pictures/Screenshots/Screenshot_%Y-%m-%d_%H-%M-%S.png
 bindsym Shift+Print exec scrot -s ~/Pictures/Screenshots/Screenshot_%Y-%m-%d_%H-%M-%S.png
 bindsym $mod+Print exec scrot -u ~/Pictures/Screenshots/Screenshot_%Y-%m-%d_%H-%M-%S.png
 
-bindsym $mod+Shift+n exec $TERM -e newsboat
-bindsym $mod+Ctrl+f exec thunar
-bindsym $mod+Ctrl+i exec $TERM -e bash $HOME/.config/cheet/cheet
-bindsym $mod+Ctrl+j exec $TERM -e jrnl
+bindsym $mod+Ctrl+c exec $TERM -e bash $HOME/.config/cheet/cheet
 bindsym $mod+Ctrl+k exec $TERM -e khal interactive
-bindsym $mod+Ctrl+q exec $TERM -e qn
-bindsym $mod+Ctrl+w exec $TERM -e nvim ~/vimwiki/index.md
+bindsym $mod+Ctrl+n exec $TERM -e newsboat
+bindsym $mod+Ctrl+v exec $TERM -e pulsemixer
+bindsym $mod+Ctrl+t exec thunar
+bindsym $mod+Ctrl+w exec wine $HOME/.wine/drive_c/Program\ Files\ \(x86\)/Watchtower/Watchtower\ Library/T/wtlibrary.exe
 
 bindsym $mod+e exec $TERM -e mutt
 bindsym $mod+i exec $TERM -e nvim ~/.config/i3/config
 bindsym $mod+m exec $TERM -e ncmpcpp
-bindsym $mod+n exec $TERM -e joplin
-bindsym $mod+p exec $TERM -e pulsemixer
+bindsym $mod+n exec $TERM -e qn
 bindsym $mod+t exec $TERM -e taskwarrior-tui
 bindsym $mod+y exec $TERM -e pipe-viewer
-bindsym $mod+o exec "/usr/bin/firefox"
-bindsym $mod+w exec wine $HOME/.wine/drive_c/Program\ Files\ \(x86\)/Watchtower/Watchtower\ Library/T/wtlibrary.exe
+bindsym $mod+w exec $TERM -e nvim ~/vimwiki/index.md
+bindsym $mod+u exec "/usr/bin/firefox"
 
 # workspace-edit
 set $ws2 "1:Terminals "

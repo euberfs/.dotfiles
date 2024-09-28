@@ -93,22 +93,21 @@
 - **$mod+Print**: Screenshot active window
 
 ### Terminal Shortcuts
-- **$mod+Shift+n**: newsboat
-- **$mod+Ctrl+f**: thunar
-- **$mod+Ctrl+i**: cheatsheet
------ **$mod+Ctrl+j**: jrnl
-- **$mod+Ctrl+k**: khal
-- **$mod+Ctrl+q**: qn
-- **$mod+Ctrl+w**: vimwiki
-- **$mod+e**: mutt
-- **$mod+i**: i3 config
-- **$mod+m**: ncmpcpp
-- **$mod+n**: joplin
-- **$mod+p**: pulsemixer
-- **$mod+t**: taskwarrior-tui
-- **$mod+y**: pipe-viewer
-- **$mod+o**: firefox
-- **$mod+w**: Watchtower
+
+- **$mod+Ctrl+c**: Cheatsheet - Quick Reference
+- **$mod+Ctrl+k**: Khal - Calendar
+- **$mod+Ctrl+n**: Newsboat - RSS Reader
+- **$mod+Ctrl+p**: Pulsemixer - Audio Mixer remover
+- **$mod+Ctrl+t**: Thunar - File Manager
+
+- **$mod+e**: Mutt - Email Client
+- **$mod+i**: i3 config - Window Manager Settings
+- **$mod+m**: Ncmpcpp - Music Player
+- **$mod+t**: Taskwarrior - Task Management
+- **$mod+y**: Youtube - Video Streaming
+- **$mod+n**: Quick Notes
+- **$mod+u**: Firefox - Web Browser
+- **$mod+w**: VimWiki - Note-taking
 
 ### Aliases
 - **doc**: `~/Documents`

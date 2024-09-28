@@ -567,10 +567,9 @@ Instruções para iniciar o Dropbox e sincronizar os arquivos de configuração 
 dropbox start -i
 systemctl --user enable dropbox
 systemctl --user start dropbox
-chmod +x $HOME/.local/bin/apps.sh
-chmod +x $HOME/.local/bin/sync_dotfiles.sh
+chmod +x $HOME/.dotfiles/scritps/sync_private_dropbox.sh
 crontab -e
-*/5 * * * * /bin/bash $HOME/.local/bin/apps.sh && /bin/bash $HOME/.local/bin/sync_dotfiles.sh
+*/5 * * * * /bin/bash $HOME/.dotfiles/scritps/sync_private_dropbox.sh
 systemctl start cronie
 ```
 

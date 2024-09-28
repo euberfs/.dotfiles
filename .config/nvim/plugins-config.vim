@@ -151,7 +151,7 @@ nnoremap <C-p> :InstantMarkdownPreview<CR>
 " vimwiki
 "========================================================
 
-"au BufNewFile ~/vimwiki/diary/*.md :silent 0r !~/.config/nvim/generate-vimwiki-diary-template '%'
+au BufNewFile ~/vimwiki/diary/*.md :silent 0r !~/.config/nvim/generate-vimwiki-diary-template '%'
 
 let g:vimwiki_list = [{'path': '~/vimwiki/',
                       \ 'syntax': 'markdown', 'ext': 'md'}]

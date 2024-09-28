@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define paths for the package list file and the not installed file
-PACKAGE_FILE="$HOME/apps_pacman"
+PACKAGE_FILE="$HOME/.dotfiles/apps_pacman"
 NOT_INSTALLED_FILE="$HOME/not_installed"
 
 # Define color codes
