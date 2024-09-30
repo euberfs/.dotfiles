@@ -6,7 +6,3 @@ so ~/.config/nvim/maps.vim
 
 
 
-
-
-
-

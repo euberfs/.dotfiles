@@ -47,5 +47,13 @@ call plug#begin()
         Plug 'dbmrq/vim-ditto'
         Plug 'preservim/vim-pencil'
         Plug 'preservim/vim-colors-pencil'
-
+        Plug 'neoclide/coc.nvim', {'branch': 'release'}
+        Plug 'neoclide/coc-snippets', {'do': 'yarn install --frozen-lockfile'}
+        Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+        Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
+        Plug 'neoclide/coc-eslint', {'do': 'yarn install --frozen-lockfile'}
+        Plug 'neoclide/coc-tslint', {'do': 'yarn install --frozen-lockfile'}
+        Plug 'neoclide/coc-css', {'do': 'yarn install --frozen-lockfile'}
+        Plug 'neoclide/coc-lists', {'do': 'yarn install --frozen-lockfile'} " mru and stuff
+        Plug 'neoclide/coc-highlight', {'do': 'yarn install --frozen-lockfile'} " color highlighting 
 call plug#end()

@@ -228,6 +228,7 @@ Dotfiles
 # Atualizar
 
 	pacman -Syyu --noconfirm && clear
+- Configurar o npm para usar o novo diretório
 
 # Tema e ícones
 
@@ -256,6 +257,12 @@ dracula
 # Impressora HP
 
 	sudo systemctl enable cups.service
+	sudo systemctl start cups.service
+	sudo hp-setup -i
+	
+# polybar  
+- [GitHub](https://github.com/polybar/polybar): *Uma barra de status altamente personalizável para o sistema X Window.*
+    
 	sudo systemctl start cups.service
 	sudo hp-setup -i
 	
@@ -291,7 +298,7 @@ Aplicativos
 - **sc-im**: [GitHub](https://github.com/sc-im/sc-im): *Um editor de planilhas de linha de comando altamente configurável.*
 - **networkmanager-dmenu**: [GitHub](https://github.com/networkmanager/networkmanager-dmenu): *Uma interface de menu para o NetworkManager usando dmenu.*
 - **perl-image-exiftool**: [GitHub](https://github.com/exiftool/exiftool): *Uma ferramenta para ler, escrever e editar metadados de arquivos de imagem.*
-
+- **tmpmail**: [GitHub](https://github.com/sdushantha/tmpmail): *A temporary email right from your terminal written in POSIX sh.*
 
 # bluetooth
 
@@ -479,12 +486,6 @@ wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_
 ```
 
 # ncmpcpp and mpd  
-- [GitHub](https://github.com/arybczak/ncmpcpp): *Um cliente MPD de linha de comando com uma interface poderosa e personalizável.*
-- [GitHub](https://github.com/MPD/MPD): *Music Player Daemon, uma aplicação flexível e servidor para tocar música.*
-
-Crie os diretórios necessários para o ncmpcpp e o mpd, e configure o serviço do mpd.
-
-```bash
 mkdir -p ~/.config/{ncmpcpp,mpd}
 mkdir -p ~/.config/mpd/playlists
 mpc update

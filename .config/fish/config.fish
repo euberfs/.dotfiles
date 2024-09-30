@@ -75,6 +75,8 @@ alias yt="pipe-viewer"
 alias tt="taskwarrior-tui"
 alias qnl="qnl | fzf"
 alias cs="bash ~/.config/cheet/cheet"
+alias tp="bat ~/Documents/topo | fzf"
+alias rename="perl-rename"
 
 # Changing "ls" to "exa"
 alias ls='exa -al --color=always --group-directories-first' # my preferred listing

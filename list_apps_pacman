@@ -127,3 +127,7 @@ virtualbox
 hplip
 cups
 playerctl
+w3m
+jq
+xclip
+

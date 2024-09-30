@@ -25,7 +25,7 @@ hide_edge_borders both
 floating_modifier $mod
 
 # Language keyboards
-#bindsym $mod+Ctrl+b exec setxkbmap -layout br && notify-send "Layout do teclado: Português (BR)"
+bindsym $mod+Ctrl+b exec setxkbmap -layout br && notify-send "Layout do teclado: Português (BR)"
 bindsym $mod+Ctrl+u exec setxkbmap -layout us && notify-send "Layout do teclado: Inglês (US)"
 
 # start a terminal

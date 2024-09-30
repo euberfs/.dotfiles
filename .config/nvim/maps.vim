@@ -28,3 +28,4 @@
 
 " Close splits and others
     nmap tt :q<CR>
+
