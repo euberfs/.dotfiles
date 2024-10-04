@@ -1,61 +1,60 @@
+## i3 Gerenciador de Janelas em Tile
 
-## i3 Window Tile Manager
-
-### Keyboard Shortcuts
+### Atalhos de Teclado
 - **$mod+Ctrl+b**: Layout do teclado: Português (BR)
 - **$mod+Ctrl+u**: Layout do teclado: Inglês (US)
 - **$mod+Return**: Terminal
-- **$mod+Shift+q**: Reload
-- **$mod+Shift+R**: Restart
-- **$mod+r**: Resize
-- **$mod+q**: Kill window
+- **$mod+Shift+q**: Recarregar
+- **$mod+Shift+R**: Reiniciar
+- **$mod+r**: Redimensionar
+- **$mod+q**: Fechar janela
 
-### Focus Navigation
-- **Left**: 
+### Navegação de Foco
+- **Esquerda**: 
   - **$mod+h**
-  - **$mod+Left**
+  - **$mod+Esquerda**
   
-- **Down**: 
+- **Abaixo**: 
   - **$mod+j**
-  - **$mod+Down**
+  - **$mod+Abaixo**
   
-- **Up**: 
+- **Acima**: 
   - **$mod+k**
-  - **$mod+Up**
+  - **$mod+Acima**
   
-- **Right**: 
+- **Direita**: 
   - **$mod+l**
-  - **$mod+Right**
+  - **$mod+Direita**
 
-### Moving Windows
-- **Left**:
+### Movendo Janelas
+- **Esquerda**:
   - **$mod+Shift+h**
-  - **$mod+Shift+Left**
+  - **$mod+Shift+Esquerda**
   
-- **Down**:
+- **Abaixo**:
   - **$mod+Shift+j**
-  - **$mod+Shift+Down**
+  - **$mod+Shift+Abaixo**
   
-- **Right**:
+- **Direita**:
   - **$mod+Shift+l**
-  - **$mod+Shift+Right**
+  - **$mod+Shift+Direita**
   
-- **Up**:
+- **Acima**:
   - **$mod+Shift+k**
-  - **$mod+Shift+Up**
+  - **$mod+Shift+Acima**
   
-### Layout Management
-- **$mod+b**: Split horizontal
-- **$mod+v**: Split vertical
-- **$mod+f**: Fullscreen
-- **$mod+Shift+s**: Stacking
-- **$mod+Shift+w**: Tabbed
-- **$mod+Shift+t**: Split
-- **$mod+Shift+space**: Floating
-- **$mod+space**: Focus
-- **$mod+a**: Focus parent
+### Gerenciamento de Layout
+- **$mod+b**: Dividir horizontalmente
+- **$mod+v**: Dividir verticalmente
+- **$mod+f**: Tela cheia
+- **$mod+Shift+s**: Empilhamento
+- **$mod+Shift+w**: Guias
+- **$mod+Shift+t**: Dividir
+- **$mod+Shift+space**: Flutuante
+- **$mod+space**: Focar
+- **$mod+a**: Focar no pai
 
-### Workspaces
+### Espaços de Trabalho
 - **$mod+1**
 - **$mod+2**
 - **$mod+3**
@@ -67,7 +66,7 @@
 - **$mod+9**
 - **$mod+0**
 
-### Moving Containers to Workspaces
+### Movendo Contêineres para Espaços de Trabalho
 - **$mod+Shift+1**
 - **$mod+Shift+2**
 - **$mod+Shift+3**
@@ -79,35 +78,33 @@
 - **$mod+Shift+9**
 - **$mod+Shift+0**
 
-### Media Control
-- **$mod+Ctrl+m**: Mute
-- **$mod+Ctrl+Down**: Volume -5%
-- **$mod+Ctrl+Up**: Volume +5%
-- **$mod+Ctrl+Left**: Previous
-- **$mod+Ctrl+p**: Play/Pause
-- **$mod+Ctrl+Right**: Next
+### Controle de Mídia
+- **$mod+Ctrl+m**: Silenciar
+- **$mod+Ctrl+Abaixo**: Volume -5%
+- **$mod+Ctrl+Acima**: Volume +5%
+- **$mod+Ctrl+Esquerda**: Anterior
+- **$mod+Ctrl+p**: Reproduzir/Pausar
+- **$mod+Ctrl+Direita**: Próximo
 
-### Screenshot Shortcuts
-- **Print**: Screenshot to `~/Pictures/Screenshots`
-- **Shift+Print**: Screenshot a specific area
-- **$mod+Print**: Screenshot active window
+### Atalhos de Captura de Tela
+- **Print**: Captura de tela para `~/Pictures/Screenshots`
+- **Shift+Print**: Captura de uma área específica
+- **$mod+Print**: Captura da janela ativa
 
-### Terminal Shortcuts
-
-- **$mod+Ctrl+c**: Cheatsheet - Quick Reference
-- **$mod+Ctrl+k**: Khal - Calendar
-- **$mod+Ctrl+n**: Newsboat - RSS Reader
-- **$mod+Ctrl+p**: Pulsemixer - Audio Mixer remover
-- **$mod+Ctrl+t**: Thunar - File Manager
-
-- **$mod+e**: Mutt - Email Client
-- **$mod+i**: i3 config - Window Manager Settings
-- **$mod+m**: Ncmpcpp - Music Player
-- **$mod+t**: Taskwarrior - Task Management
-- **$mod+y**: Youtube - Video Streaming
-- **$mod+n**: Quick Notes
-- **$mod+u**: Firefox - Web Browser
-- **$mod+w**: VimWiki - Note-taking
+### Atalhos de Terminal
+- **$mod+Ctrl+c**: Cheatsheet - Referência Rápida
+- **$mod+Ctrl+k**: Khal - Calendário
+- **$mod+Ctrl+n**: Newsboat - Leitor de RSS
+- **$mod+Ctrl+p**: Pulsemixer - Mixer de Áudio
+- **$mod+Ctrl+t**: Thunar - Gerenciador de Arquivos
+- **$mod+e**: Mutt - Cliente de Email
+- **$mod+i**: Configuração do i3 - Configurações do Gerenciador de Janelas
+- **$mod+m**: Ncmpcpp - Reprodutor de Música
+- **$mod+t**: Taskwarrior - Gestão de Tarefas
+- **$mod+y**: Youtube - Streaming de Vídeo
+- **$mod+n**: Notas Rápidas
+- **$mod+u**: Firefox - Navegador Web
+- **$mod+w**: VimWiki - Tomar Notas
 
 ### Aliases
 - **doc**: `~/Documents`
@@ -117,27 +114,27 @@
 - **mus**: `~/Music`
 - **dot**: `~/.dotfiles`
 - **db**: `~/Dropbox`
-- **fish.conf**: Fish configuration
-- **i3.conf**: i3 configuration
-- **nvim.conf**: nvim configuration
-- **feed**: newsboat URLs
-- **espan**: Personal espanso YAML
+- **fish.conf**: Configuração do Fish
+- **i3.conf**: Configuração do i3
+- **nvim.conf**: Configuração do nvim
+- **feed**: URLs do newsboat
+- **espan**: YAML pessoal do espanso
 - **news**: newsboat
 - **note**: joplin
 - **yt**: YouTube
 - **tt**: taskwarrior-tui
-- **qnl**: Display all quick notes
+- **qnl**: Exibir todas as notas rápidas
 
-### YoutuTube-dl Commands
-- **ydlu**: Update yt-dlp to the latest version.
-- **ydla**: Download video and extract audio in MP3 format.
-- **ydlb**: Download video in the best available quality.
-- **ydlp**: Download all videos from a playlist in the best quality.
-- **ydl-pmp3**: Use `youtube-dl` to download audio in MP3.
-- **ydls**: Download English subtitles if available.
-- **ydl-download**: Display help with commands and options.
+### Comandos do YoutuTube-dl
+- **ydlu**: Atualizar yt-dlp para a versão mais recente.
+- **ydla**: Baixar vídeo e extrair áudio em formato MP3.
+- **ydlb**: Baixar vídeo na melhor qualidade disponível.
+- **ydlp**: Baixar todos os vídeos de uma playlist na melhor qualidade.
+- **ydl-pmp3**: Usar `youtube-dl` para baixar áudio em MP3.
+- **ydls**: Baixar legendas em inglês, se disponíveis.
+- **ydl-download**: Exibir ajuda com comandos e opções.
 
-### Git Aliases
+### Aliases do Git
 - **addall**: `git add .`
 - **add**: `git add`
 - **branch**: `git branch`
@@ -150,7 +147,7 @@
 - **tag**: `git tag`
 - **newtag**: `git tag -a`
 
-### VLC Commands
+### Comandos do VLC
 - **playwav**: `vlc *.wav`
 - **playogg**: `vlc *.ogg`
 - **playmp3**: `vlc *.mp3`
