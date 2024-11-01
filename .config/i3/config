@@ -10,7 +10,7 @@ workspace_layout tabbed
 font pango:Droid Sans Regular 12
 
 # Picom
-exec_always --no-startup-id picom -b
+#exec_always --no-startup-id picom -b
 
 # Polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh --blocks
