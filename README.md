@@ -29,7 +29,7 @@
 
 ## Com Swap
 
- mkfs.fat -F 32 /dev/sda1
+mkfs.fat -F 32 /dev/sda1
 	mkswap /dev/sda2
 	mkfs.btrfs /dev/sda3
 	mkfs.btrfs /dev/sda4
