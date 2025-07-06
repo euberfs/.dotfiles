@@ -12,7 +12,24 @@
 
 # Formatar e montar partições
 
+## Sem Swap
+
 	mkfs.fat -F 32 /dev/sda1
+	mkfs.btrfs /dev/sda2
+	mkfs.btrfs /dev/sda3
+
+	mount /dev/sda2 /mnt
+	mkdir /mnt/home
+	mkdir /mnt/boot
+	mkdir /mnt/boot/efi
+	mount /dev/sda3 /mnt/home
+	mount /dev/sda1 /mnt/boot
+	mount /dev/sda1 /mnt/boot/efi
+
+
+## Com Swap
+
+ mkfs.fat -F 32 /dev/sda1
 	mkswap /dev/sda2
 	mkfs.btrfs /dev/sda3
 	mkfs.btrfs /dev/sda4
