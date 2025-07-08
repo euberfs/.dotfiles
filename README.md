@@ -55,7 +55,7 @@ mkfs.fat -F 32 /dev/sda1
 
 # Instalar o sistema base
 
-	pacstrap /mnt base base-devel linux linux-firmware neovim git
+	basestrap /mnt base base-devel linux linux-firmware neovim git
 
 # Gerar fstab
 
